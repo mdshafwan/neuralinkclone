@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <title>
+      Neuralink — Pioneering Brain Computer Interfaces
+    </title>
+    <link rel="icon" type="image/png" href="https://neuralink.com/favicon.png">
+  </head>
+<header>
+  <img src="asset\favicon (2).png" class="logo" alt="Logo">
+  <nav class="nav-links">
+    <a href="#">Technology</a>
+    <a href="#">Careers</a>
+    <a href="#">Updates</a>
+    <a href="#" class="cta">Clinical Trials</a>
+  </nav>
+</header>
+  <style>
+  /*firtspage*/
+header {
+  position: fixed;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 60px;
+  background: transparent;
+  z-index: 10;
+}
+
+.logo {
+  position: fixed;
+  width: 55px;
+  top: -5px;
+  left: 5px;
+  height: auto;
+}
+
+.nav-links {
+  position: absolute;
+  top: 28px;
+  left: 68%;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-family: Arial, sans-serif;
+}
+
+.nav-links a {
+  color: #555;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.nav-links a:hover {
+  color: #ccc;
+}
+
+.nav-links .cta {
+  padding: 6px 18px;
+  border: 1px solid #555;
+  border-radius: 25px;
+  color: #555;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.nav-links .cta:hover {
+  background: #fff;
+  color: #000;
+}
+
+body,
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow-x:
+		hidden;
+}
+
+.nav-links a:hover {
+	color: #ccc;
+}
+
+.hero .firstpage {
+	position:
+		absolute;
+	top: 64.5%;
+	left: 6%;
+	transform: translateY(-50%);
+	color: #fff;
+	font-size: 2.5rem;
+	font-weight: 70;
+	line-height: 1.1;
+	max-width: 6000px;
+	margin: 0;
+	fontp-style: bold;
+}
+
+.hero {
+	position: relative;
+	height: 100vh;
+}
+
+.hero video {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit:
+		cover;
+	z-index: -1;
+}
+
+
+.cta-btn {
+	background-color: #ffffff;
+	color: #000000;
+	font-family: Arial, sans-serif;
+	font-weight: 60;
+	font-size: 16px;
+	padding: 20px 28px;
+	border: none;
+	border-radius:
+		30px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: absolute;
+	top:
+		80%;
+	left: 6.5%;
+}
+
+.cta-btn:hover {
+	background-color: rgba(255, 255, 255, 0.9);
+	transform: translateY(-3px);
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.nav-links .cta {
+	padding: 6px 18px;
+	border: 1px solid white;
+	border-radius:
+		25px;
+	font-weight: 600;
+	transition: all 0.3s ease;
+}
+
+.nav-links .cta:hover {
+	background-color: white;
+	color: black;
+}
+
+/*firstpage*/
+.content-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #fff;
+  color: #000;
+  padding: 40px 60px;     /* ↓ smaller padding top/bottom */
+  max-width: 1100px;      /* ↓ narrower overall width if needed */
+  margin: 80px auto;      /* space above/below in the page */
+  min-height: 240px;      /* ↓ reduces the box height */
+  font-family: 'Arial', sans-serif;
+}
+
+
+.right {
+  font-size: 46px;
+  font-weight: 4;
+  line-height: 1.1;
+  display: inline;       
+  word-wrap: break-word; 
+}
+
+.content-section .right {
+  flex: 1;
+  font-size: 40px;
+  line-height: 1.15;
+  font-weight: 40;
+  max-width: 500px;          
+  margin-right: 10px;
+  padding-top: 10px;
+
+}
+
+.word-wrap {
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline;
+  width: 200px;                
+  height: 1em;
+  overflow: hidden;
+  white-space: nowrap;       
+}
+
+
+.word {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: fadeWords 12s infinite;
+}
+
+.word:nth-child(1) { animation-delay: 0s; }
+.word:nth-child(2) { animation-delay: 3s; }
+.word:nth-child(3) { animation-delay: 6s; }
+.word:nth-child(4) { animation-delay: 9s; }
+
+@keyframes fadeWords {
+  0%, 5%   { opacity: 0; }
+  10%, 25% { opacity: 1; }
+  30%,100% { opacity: 0; }
+}
+.content-section .left {
+  flex: 1;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 400px;
+}
+/*second page*/
+.pioneers {
+  background: #f8f7f4;
+  color: #111;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 60px 20px 50px;
+  position: relative;
+}
+
+/* heading */
+.pioneers h1 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+
+/* hide radios */
+.pioneers input { display: none; }
+
+/* ---- VIDEO ---- */
+.viewer {
+  position: relative;
+  width: 60%;                
+  max-width: 720px;
+  margin: 0 auto;
+  aspect-ratio: 16/9;
+}
+.clip {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  display: none;
+}
+#v1:checked ~ .viewer .v1,
+#v2:checked ~ .viewer .v2,
+#v3:checked ~ .viewer .v3,
+#v4:checked ~ .viewer .v4,
+#v5:checked ~ .viewer .v5 { display: block; }
+
+/* ---- TEXT ---- */
+.footers {
+  width: 60%;
+  max-width: 720px;
+  margin: 20px auto 0;
+  text-align: left;
+}
+.f { display: none; }
+#v1:checked ~ .footers .v1f,
+#v2:checked ~ .footers .v2f,
+#v3:checked ~ .footers .v3f,
+#v4:checked ~ .footers .v4f,
+#v5:checked ~ .footers .v5f { display: block; }
+
+.quote {
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+.name {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+.desc {
+  font-size: 14px;
+  color: #333;
+  margin-top: 50px;
+	text-align: left;
+}
+.dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: #111;
+  border-radius: 50%;
+  margin: 0 8px 2px;
+	
+}
+
+
+.controls {
+  width: 60%;
+  max-width: 720px;
+  margin: 18px auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* progress (left under text) */
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+  width: 500px;
+  position: relative;
+  margin: 22px auto 0;
+}
+.nav label {
+  flex: 1;
+  height: 2.5px;
+  background: #ccc;
+  border-radius: 1.5px;
+  cursor: pointer;
+  transition: all .80s;
+}
+#v1:checked ~ .controls .nav label[for="v1"],
+#v2:checked ~ .controls .nav label[for="v2"],
+#v3:checked ~ .controls .nav label[for="v3"],
+#v4:checked ~ .controls .nav label[for="v4"],
+#v5:checked ~ .controls .nav label[for="v5"] {
+  flex: 5.15;
+  background: #111;
+}
+/* faint optional decorative mark */
+.nav::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 6px;
+  left: calc(50% - 20px);
+  background: url("asset/button.svg") no-repeat center/contain;
+  opacity: .05;
+  pointer-events: none;
+}
+
+
+.arrows {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;   
+  align-items: center;
+  height: 54px;
+}
+.arrow-set {
+  position: absolute;
+  right: 0;
+  display: none;
+  gap: 18px;
+}
+.arrow {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #111;
+  border-radius: 50%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px;
+  cursor: pointer;
+  transition: background-color .25s, filter .25s;
+  margin-top:-125px;
+}
+.arrow.left  { background-image: url("asset/left.svg"); }
+.arrow.right { background-image: url("asset/right.svg"); }
+.arrow:hover {
+  background-color: #111;
+  filter: invert(1);
+}
+#v1:checked ~ .controls .a1,
+#v2:checked ~ .controls .a2,
+#v3:checked ~ .controls .a3,
+#v4:checked ~ .controls .a4,
+#v5:checked ~ .controls .a5 {
+  display: flex;
+  justify-content: flex-end;
+}
+/*third page*/
+.wanted {
+  background: #e8d9b5;    
+  color: #111;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 90px 20px;
+}
+
+.wanted h2 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+
+.card {
+  position: relative;
+  width: 340px;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 40px 25px 25px;
+  color: #fff;
+  text-align: left;
+}
+
+.overlay .title {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.overlay .btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.overlay .btn:hover {
+  background: #fff;
+  color: #111;
+}
+
+
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 90%;
+    max-width: 340px;
+  }
+}
+/* --- FOOTER --- */
+.footer {
+  background: #f8f7f4;
+  color: #111;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 70px 80px 40px;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+/* column headings */
+.footer h4 {
+  color: #888;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+/* unordered lists */
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px;
+}
+
+.footer li {
+  margin-bottom: 8px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #111;
+  font-size: 15px;
+  transition: color .3s;
+}
+.footer a:hover { color: #555; }
+
+/* cookie + join buttons */
+.footer button,
+.footer .join-btn {
+  border: 1px solid #111;
+  border-radius: 25px;
+  background: transparent;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: background .3s, color .3s;
+}
+.footer button:hover,
+.footer .join-btn:hover {
+  background: #111;
+  color: #fff;
+}
+
+/* place cookie button under legal links */
+.cookie-btn {
+  margin-top: 10px;
+}
+
+/* join button floats to far right, top‑aligned */
+.join-btn {
+  position: absolute;
+  top: 70px;
+  right: 80px;
+}
+
+/* fourth page */
+/* ---- FOOTER ---- */
+.footer {
+  background: #f8f7f4;
+  color: #111;
+  font-family: Arial, sans-serif;
+  padding: 80px 80px 40px;
+  padding-left: -40;
+  position: relative;
+}
+
+/* columns area */
+.footer-columns {
+  display: flex;
+  justify-content: flex-start;
+  gap: 120px;             /* spacing between Company, Contact, Legal */
+  margin-bottom: 40px;
+  margin-top: -50px;
+}
+
+/* each column */
+.footer-col h4 {
+  color: #888;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+.footer-col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-col li { margin-bottom: 8px; }
+.footer-col a {
+  color: #111;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color .3s;
+}
+.footer-col a:hover { color: #555; }
+
+/* right‑hand “Join” button */
+.join-btn {
+  position: absolute;
+  top: 80px;
+  right: 80px;
+  border: 1px solid #111;
+  border-radius: 25px;
+  background: transparent;
+  padding: 11px 22px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background .3s, color .3s;
+}
+.join-btn:hover { background: #111; color: #fff; }
+
+/* cookie button under legal links */
+.cookie-btn {
+  margin-top: 16px;
+  border: 1px solid #111;
+  border-radius: 25px;
+  background: transparent;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background .3s, color .3s;
+}
+.cookie-btn:hover { background: #111; color: #fff; }
+
+/* bottom bar */
+.footer-bottom {
+  border-top: 1px solid #ddd;
+  margin-top: 300px;
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 80px;
+}
+.footer-bottom img 
+{ 
+  width: 40px; 
+  align-items: flex-start;
+  margin-left: -1350px;  
+}
+.footer-bottom p { font-size: 14px; margin: 0; }
+
+
+
+
+@media (max-width: 900px) {
+
+
+  header {
+    padding: 14px 24px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+  }
+
+
+  .logo {
+    position: static;
+    width: 40px;
+    height: auto;
+    margin-bottom: 8px;
+  }
+
+  
+  .nav-links {
+    position: static;           
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  .nav-links a,
+  .nav-links .cta {
+    font-size: 14px;
+    padding: 5px 12px;
+  }
+
+  /* hero heading */
+  .hero .firstpage {
+    position: static;
+    font-size: 2rem;
+    text-align: center;
+    margin: 60px 20px 20px;
+  }
+
+
+  .cta-btn {
+    position: static;
+    display: block;
+    margin: 20px auto 60px;
+    font-size: 14px;
+    padding: 14px 20px;
+    transform: none;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .content-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .content-section .right,
+  .content-section .left {
+    max-width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .viewer {
+    width: 90%;
+  }
+  .footers {
+    width: 90%;
+  }
+  .controls {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .nav {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .footer {
+    padding: 60px 30px 30px;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 0;
+    align-items: flex-start;
+  }
+
+  .join-btn {
+    position: static;
+    align-self: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+  }
+
+  .footer-bottom img {
+    margin: 0;
+  }
+}
+</Style>  
+  <body>
+    <div class="hero">
+      <video autoplay muted loop>
+        <source src="https://neuralink.com/assets/static/neuralinkIntro.BLFlcxWZ.mp4"
+        type="video/mp4">
+      </video>
+      <p class="firstpage">
+        From neural signals
+        <br>
+        to life-changing impact
+      </p>
+      <button class="cta-btn">
+        Explore our client trails
+      </button>
+    </div>
+    <div class="content-section">
+     <div class="right">
+  	Building brain<br>
+  	interfaces to restore<br>
+  	<span class="word-wrap">
+    	<span class="word">control</span>
+    	<span class="word">autonomy</span>
+    	<span class="word">speech</span>
+    	<span class="word">vision</span>
+ 	 </span>	
+	</div>
+      <div class="left">
+        <p>
+          Our brain-computer interface translates neural signals into actions. In
+          our clinical trials, people are using Neuralink devices to control computers
+          and robotic arms<br><br> with their thoughts. This technology will restore autonomy
+          to those with unmet medical needs and unlock new dimensions of human potential.
+        </p>
+      </div>
+    </div>
+    <div class="features">
+<section class="pioneers">
+  <h1>Meet our pioneers</h1>
+
+  <!-- 5 hidden radio buttons -->
+  <input type="radio" name="vid" id="v1" checked>
+  <input type="radio" name="vid" id="v2">
+  <input type="radio" name="vid" id="v3">
+  <input type="radio" name="vid" id="v4">
+  <input type="radio" name="vid" id="v5">
+
+  <!-- video viewer -->
+  <div class="viewer">
+    <video class="clip v1" autoplay muted loop playsinline>
+      <source src="https://neuralink.com/assets/static/noland.DX6XdBVM.mp4" type="video/mp4">
+    </video>
+    <video class="clip v2" autoplay muted loop playsinline>
+      <source src="https://neuralink.com/assets/static/brad.BJK3ej1r.mp4" type="video/mp4">
+    </video>
+    <video class="clip v3" autoplay muted loop playsinline>
+      <source src="https://neuralink.com/assets/static/rj.DGZElwRX.mp4" type="video/mp4">
+    </video>
+    <video class="clip v4" autoplay muted loop playsinline>
+      <source src="https://neuralink.com/assets/static/alex.D5-eObDA.mp4" type="video/mp4">
+    </video>
+    <video class="clip v5" autoplay muted loop playsinline>
+      <source src="https://neuralink.com/assets/static/mike.CA2PNwTh.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- text blocks -->
+  <div class="footers">
+    <div class="f v1f">
+      <p class="quote">"It's given me the ability to do things on my own again"</p>
+      <p class="name">Noland</p>
+      <p class="desc">
+        Spinal cord injury <span class="dot"></span> Received Neuralink implant in <b>Jan 2024</b>
+      </p>
+    </div>
+
+    <div class="f v2f">
+      <p class="quote">"I wrote this with my brain!"</p>
+      <p class="name">Brad</p>
+      <p class="desc">
+        Amyotrophic lateral sclerosis <span class="dot"></span> Received Neuralink implant in <b>Nov 2024</b>
+      </p>
+    </div>
+
+    <div class="f v3f">
+      <p class="quote">"Game changer"</p>
+      <p class="name">RJ</p>
+      <p class="desc">
+        Spinal cord injury <span class="dot"></span> Received Neuralink implant in <b>Apr 2025</b>
+      </p>
+    </div>
+
+    <div class="f v4f">
+      <p class="quote">"Hope through technology"</p>
+      <p class="name">Alex</p>
+      <p class="desc">
+        Spinal cord injury <span class="dot"></span> Received Neuralink implant in <b>Jul 2024</b>
+      </p>
+    </div>
+
+    <div class="f v5f">
+      <p class="quote">"Turning signals into action"</p>
+      <p class="name">Mike</p>
+      <p class="desc">
+        Spinal cord injury <span class="dot"></span> Received Neuralink implant in <b>Aug 2024</b>
+      </p>
+    </div>
+  </div>
+
+  <!-- controls row (progress left, arrows right) -->
+  <div class="controls">
+    <!-- progress line -->
+    <div class="nav">
+      <label for="v1"></label>
+      <label for="v2"></label>
+      <label for="v3"></label>
+      <label for="v4"></label>
+      <label for="v5"></label>
+    </div>
+
+    <!-- arrow buttons -->
+    <div class="arrows">
+      <div class="arrow-set a1">
+        <label for="v5" class="arrow left"></label>
+        <label for="v2" class="arrow right"></label>
+      </div>
+      <div class="arrow-set a2">
+        <label for="v1" class="arrow left"></label>
+        <label for="v3" class="arrow right"></label>
+      </div>
+      <div class="arrow-set a3">
+        <label for="v2" class="arrow left"></label>
+        <label for="v4" class="arrow right"></label>
+      </div>
+      <div class="arrow-set a4">
+        <label for="v3" class="arrow left"></label>
+        <label for="v5" class="arrow right"></label>
+      </div>
+      <div class="arrow-set a5">
+        <label for="v4" class="arrow left"></label>
+        <label for="v1" class="arrow right"></label>
+      </div>
+    </div>
+  </div>
+</section>
+</div>    
+<section class="wanted">
+  <h2>Pioneers Wanted</h2>
+
+  <div class="cards">
+    <!-- left card -->
+    <div class="card">
+      <img src="https://neuralink.com/assets/static/img-tile-1.BG4NvEcU.jpg" alt="">
+      <div class="overlay">
+        <p class="title">Patients & Caregivers</p>
+        <a href="#" class="btn">Learn about clinical trials </a>
+      </div>
+    </div>
+
+    <!-- right card -->
+    <div class="card">
+      <img src="https://neuralink.com/assets/static/img-tile-2.D3T-Ux7M.jpg" alt="">
+      <div class="overlay">
+        <p class="title">Engineers & Operators</p>
+        <a href="#" class="btn">Explore our technology </a>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-columns">
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">Technology</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Updates</a></li>
+        <li><a href="#">Clinical Trials</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="#">Email Now</a></li>
+        <li><a href="#">X</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">YouTube</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col legal">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="#">Patient Registry Privacy Notice</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Use</a></li>
+      </ul>
+      <button class="cookie-btn">Change Cookie Settings</button>
+    </div>
+  </div>
+
+  <button class="join-btn">Join the Patient Registry</button>
+
+  <div class="footer-bottom">
+    <img src="https://neuralink.com/favicon.png" alt="Neuralink logo">
+    <p>© Neuralink 2025</p>
+  </div>
+</footer>
+  </body>
+
+</html>
