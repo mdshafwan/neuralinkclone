@@ -218,17 +218,17 @@
       position: relative;
     }
 
-    /* heading */
+    
     .pioneers h1 {
       font-size: 40px;
       font-weight: 400;
       margin-bottom: 32px;
     }
 
-    /* hide radios */
+    
     .pioneers input { display: none; }
 
-    /* ---- VIDEO ---- */
+  
     .viewer {
       position: relative;
       width: 60%;                
@@ -251,7 +251,7 @@
     #v4:checked ~ .viewer .v4,
     #v5:checked ~ .viewer .v5 { display: block; }
 
-    /* ---- TEXT ---- */
+    
     .footers {
       width: 60%;
       max-width: 720px;
@@ -303,7 +303,7 @@
       align-items: flex-start;
     }
 
-    /* progress (left under text) */
+    
     .nav {
       display: flex;
       justify-content: flex-start;
@@ -332,7 +332,6 @@
       background: #111;
     }
     
-    /* faint optional decorative mark */
     .nav::before {
       content: "";
       position: absolute;
@@ -476,7 +475,6 @@
       position: relative;
     }
 
-    /* columns area */
     .footer-columns {
       display: flex;
       justify-content: flex-start;
@@ -485,7 +483,6 @@
       margin-top: -50px;
     }
 
-    /* each column */
     .footer-col h4 {
       color: #888;
       font-size: 14px;
@@ -510,7 +507,6 @@
     
     .footer-col a:hover { color: #555; }
 
-    /* right‑hand "Join" button */
     .join-btn {
       position: absolute;
       top: 80px;
@@ -526,7 +522,6 @@
     
     .join-btn:hover { background: #111; color: #fff; }
 
-    /* cookie button under legal links */
     .cookie-btn {
       margin-top: 16px;
       border: 1px solid #111;
@@ -540,7 +535,6 @@
     
     .cookie-btn:hover { background: #111; color: #fff; }
 
-    /* bottom bar */
     .footer-bottom {
       border-top: 1px solid #ddd;
       margin-top: 300px;
@@ -566,7 +560,6 @@
         display: block;
       }
 
-      /* Slide-out menu styling */
       .nav-links {
         position: fixed;
         top: 0;
@@ -593,12 +586,10 @@
         color: #111;
       }
 
-      /* Show menu when checkbox checked */
       #menu-toggle:checked ~ .nav-links {
         right: 0;
       }
 
-      /* Change icon to ✕ when open */
       #menu-toggle:checked + .menu-icon::after {
         content: "✕";
         position: absolute;
@@ -607,7 +598,6 @@
         color: #111;
       }
 
-      /* Hide ☰ when open */
       #menu-toggle:checked + .menu-icon {
         color: transparent;
       }
@@ -621,7 +611,6 @@
         width: 40px;
       }
 
-      /* hero heading */
       .hero .firstpage {
         font-size: 2rem;
         left: 5%;
@@ -766,14 +755,12 @@
     <section class="pioneers">
       <h1>Meet our pioneers</h1>
 
-      <!-- 5 hidden radio buttons -->
       <input type="radio" name="vid" id="v1" checked>
       <input type="radio" name="vid" id="v2">
       <input type="radio" name="vid" id="v3">
       <input type="radio" name="vid" id="v4">
       <input type="radio" name="vid" id="v5">
 
-      <!-- video viewer -->
       <div class="viewer">
         <video class="clip v1" autoplay muted loop playsinline>
           <source src="https://neuralink.com/assets/static/noland.DX6XdBVM.mp4" type="video/mp4">
@@ -792,7 +779,6 @@
         </video>
       </div>
 
-      <!-- text blocks -->
       <div class="footers">
         <div class="f v1f">
           <p class="quote">"It's given me the ability to do things on my own again"</p>
@@ -835,9 +821,7 @@
         </div>
       </div>
 
-      <!-- controls row (progress left, arrows right) -->
       <div class="controls">
-        <!-- progress line -->
         <div class="nav">
           <label for="v1"></label>
           <label for="v2"></label>
@@ -846,7 +830,6 @@
           <label for="v5"></label>
         </div>
 
-        <!-- arrow buttons -->
         <div class="arrows">
           <div class="arrow-set a1">
             <label for="v5" class="arrow left"></label>
@@ -877,7 +860,6 @@
     <h2>Pioneers Wanted</h2>
 
     <div class="cards">
-      <!-- left card -->
       <div class="card">
         <img src="https://neuralink.com/assets/static/img-tile-1.BG4NvEcU.jpg" alt="">
         <div class="overlay">
@@ -885,8 +867,7 @@
           <a href="#" class="btn">Learn about clinical trials</a>
         </div>
       </div>
-
-      <!-- right card -->
+      
       <div class="card">
         <img src="https://neuralink.com/assets/static/img-tile-2.D3T-Ux7M.jpg" alt="">
         <div class="overlay">
@@ -941,3 +922,4 @@
   </footer>
 </body>
 </html>
+
